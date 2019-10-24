@@ -1,0 +1,1090 @@
+/*  em, strong, button, blockquote, small, strike, sub, sup, tt,  */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-size: 100%;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*:focus,
+*:hover {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-wrap input[type="text"],
+.form-wrap input[type="number"],
+.form-wrap input[type="email"],
+.form-wrap input[type="password"],
+.form-wrap input[type="date"],
+.form-wrap input[type="search"],
+.form-wrap input[type="date"],
+.form-wrap input[type="datetime-local"],
+.form-wrap input[type="tel"],
+.form-wrap textarea
+ {
+    appearance: none;
+    background-color: #ffffff;
+    font-family: 'Proxima Nova Rg';
+    color: #ffffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: transparent;
+    box-shadow: none;
+    display: block;
+    font-size: 14px;
+    line-height: normal;
+    max-width: 100%;
+    outline: none;
+    padding: 0 20px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*select {
+    background-image: url(select-arrow-down.svg);
+    background-position: right 30px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}*/
+
+.form-group {
+    margin-bottom: 35px;
+    padding: 0 15px !important;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Proxima Nova Rg';
+}
+
+:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Proxima Nova Rg';
+}
+
+::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Proxima Nova Rg';
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Font Awesome\ 5 Free', 'Proxima Nova Rg';
+    color: #9E9E9E;
+}
+
+/*-----------------Common end-----------------*/
+
+.dashboard {
+    background-color: #c1d1cc;
+    background: linear-gradient(120deg, #0a263f 0%, #155d46 100%);    
+}
+
+.header {
+    padding-top: 40px;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-dark .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    padding: 0 15px;
+    color: rgba(255, 255, 255, .7) !important;
+    font-family: 'Proxima Nova Rg';
+    font-size: 17px;
+}
+
+.site-account ul {
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site-account {
+    display: flex;
+    align-items: center;
+}
+
+.site-account ul li {
+    line-height: normal;
+}
+
+.site-account ul li a {
+    padding: 0;
+    color: #ffff;
+    font-family: 'Proxima Nova Rg';
+    font-size: 17px;
+}
+
+.site-account ul li a.act-btn {
+    color: #6DDB61;
+    font-size: 15px;
+}
+
+.serch-pannel {
+    background: rgba(245, 245, 245, .2);
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 51px;
+}
+
+.serch-pannel input[type="text"] {
+    padding: 14px;
+    background: rgba(255, 255, 255, .22);
+}
+
+.serch-pannel .form-wrap {
+    position: relative;
+}
+
+.serch-pannel .form-wrap .label {
+    color: #fff;
+    font-size: 17px;
+    margin-right: 18px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-family: 'Proxima Nova Rg';
+    transform: translateY(-50%);
+    line-height: 18px;
+}
+
+.input-tab {
+    padding-left: 80px;
+}
+
+.btn-group {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search-btn {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, .23);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    border: transparent;
+}
+
+.search-btn.active i{
+    transform: rotate(180deg);
+}
+
+.filter-btn {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: transparent;
+    font-size: 14px;
+    color: #fff;
+    display: none;
+    background-color: transparent;
+}
+
+.btn-group.panel-active .filter-btn {
+    display: block;
+}
+
+.display-pannel {
+    display: flex;
+    padding-left: 80px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.display-pannel .dd-1:after {
+    content: "Placement";
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 300;
+}
+
+.display-pannel .dd-2:after {
+    content: "Device";
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 300;
+}
+
+.display-pannel .dd-3:after {
+    content: "Inventory";
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 300;
+}
+
+.display-pannel .dd-4:after {
+    content: "Website";
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 300;
+}
+
+.search-button {
+    background: rgba(109, 219, 97, 1);
+    border: transparent;
+    padding: 6px 30px;
+    line-height: normal;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 36px;
+    color: #ffffff;
+    font-family: 'Proxima Nova Rg';
+}
+
+.display-pannel .btn {
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(54, 98, 126, 1);
+    justify-content: space-between;
+    font-family: 'Proxima Nova Rg';
+}
+
+.display-pannel li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.display-pannel li {
+    width: 100%;
+    max-width: 100%;
+}
+
+.display-pannel .dropdown-toggle:after {
+    margin-left: 95px;
+    content: url(../image/down-arrow.svg);
+    border: transparent;
+    width: 29px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+
+.save-pannel {
+    display: flex;
+    padding-left: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3px;
+}
+
+.search-box-popup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-box-popup .search-button {
+    margin: 0 15px;
+}
+
+.search-box-popup .btn {
+    background-color: white;
+    color: #36627E;
+    font-size: 14px;
+    border: transparent;
+    padding: 6px 20px;
+    line-height: normal;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Rg';
+    height: 36px;
+}
+
+.save-pannel a {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: 'Proxima Nova Rg';
+}
+
+.search-box-popup .dropdown-item {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px 15px;
+    color: rgba(54, 98, 126, 1);
+    font-family: 'Proxima Nova Rg';
+}
+
+.search-box-popup .dropdown-item i,
+.search-box-popup .btn i {
+    margin-right: 10px;
+}
+
+.search-box-popup .btn-secondary:not(:disabled):not(.disabled).active,
+.search-box-popup .btn-secondary:not(:disabled):not(.disabled):active,
+.search-box-popup .show>.btn-secondary.dropdown-toggle {
+    color: #36627e;
+    background-color: white;
+    border-color: transparent;
+}
+
+/*----------dashboard css end----------*/
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+
+.styled-checkbox+label {
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Proxima Nova Rg';
+}
+
+.styled-checkbox+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.styled-checkbox:checked+label {
+    color: #6ddb61;
+}
+
+.styled-checkbox:checked+label:before {
+    background: #6ddb61;
+    border: 1px solid #ffffff;
+}
+
+.styled-checkbox:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+/*----------Check box css end----------*/
+
+.site-chart {
+    background-color: rgba(245, 245, 245, 0.77);
+}
+
+.site-chart .chart-detail .chart-box {
+    padding: 20px 100px 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+}
+.date-box{
+    display: flex;
+    padding: 10px 0;
+}
+
+.site-chart .chart-detail .chart-box input {
+    background: #ffffff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16) !important;
+    border-radius: 20px;
+    border: transparent;
+    padding: 8px 12px;
+    font-family: 'Proxima Nova Rg';
+    
+}
+.site-chart .chart-detail .chart-box input:not(:first-child){
+  margin-left: 15px;  
+}
+.data-picker {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.site-chart .chart-detail .chart-box h5 {
+    font-size: 15px;
+    color: #86868B;
+    font-weight: 900;
+    font-family: 'Proxima Nova Rg';
+}
+
+.input-daterange {
+    width: auto;
+}
+
+.input-daterange .form-control {
+    width: auto;
+}
+
+.input-daterange input {
+    text-align: left;
+}
+
+.site-chart .chart-inner {
+    padding: 30px;
+    background: #fff;
+}
+
+.site-chart .chart-inner h2 {
+    color: rgba(135, 137, 145, 1);
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Proxima Nova Bl';
+}
+
+.site-chart .chart-detail {
+    background: #f1f1f1;
+}
+
+.site-chart .chart-detail ul {
+    background: #ffffff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+}
+
+.site-chart .chart-detail .box-link.active,
+.site-chart .chart-detail .box-link:hover {
+    background: linear-gradient(120deg, rgba(15, 55, 91, 1) 0%, rgba(30, 186, 13, 1) 100%);
+}
+
+.site-chart .chart-detail .box-link.active a,
+.site-chart .chart-detail .box-link:hover a {
+    color: #ffffff;
+}
+
+.site-chart .chart-detail .box-link {
+    padding: 8px 26px;
+    border-radius: 20px;
+}
+
+.site-chart .chart-detail .box-link a {
+    font-size: 15px;
+    color: #86868B;
+    font-weight: 400;
+    font-family: 'Proxima Nova Rg';
+}
+
+/*----------Chart css end----------*/
+
+.search-toggle {
+    display: block;
+    background-color: #E1E1E1;
+    /*position: absolute;
+    top: 120%;*/
+    z-index: 9999;
+    width: 800px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16) !important;
+}
+
+.search-list {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+}
+.search-title{
+   padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-title h2{
+    font-size: 24px;
+    color: rgba(135, 137, 145, 1);
+    font-family: 'Proxima Nova Rg';
+}
+.close-btn .close{
+    font-size: 20px;
+    text-shadow: none !important;
+    opacity: 1;
+    color: rgba(77, 79, 92, .5) !important;
+    font-weight: 400;
+    cursor: pointer;
+}
+.pagination-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.del-btn {
+    background-color: #F44071;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.del-btn i {
+    color: #ffffff;
+}
+
+.add-btn {
+    background: #72BA6A;
+    border-radius: 19px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Proxima Nova Rg';
+    text-transform: capitalize;
+    margin-right: 8px;
+}
+
+.add-btn i {
+    margin-right: 10px;
+}
+
+.pagination-inner li {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    line-height: normal;
+}
+
+.pagination-inner li a {
+    border: transparent;
+    border-radius: 3px;
+    line-height: normal;
+    color: rgba(77, 79, 92, .5) !important;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-family: 'Proxima Nova Rg';
+    line-height: normal;
+}
+
+.pagination-inner li:hover a {
+    background-color: #1EBA0D;
+    color: #ffffff !important;
+}
+
+.pagination-inner p {
+    color: #878787;
+    font-family: 'Proxima Nova Rg';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-list li:not(:last-child) {
+    border-bottom: 1px solid #888;
+}
+
+.search-text p {
+    color: #8B8B8B;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Proxima Nova Rg';
+}
+
+.search-text h5 {
+    color: #344A5D;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Proxima Nova Rg';
+}
+
+/*----------Save serch css end----------*/
+
+.modal {
+    padding: 0 15px;
+}
+
+.modal-content {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.36) !important;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #F1F1F1;
+    max-width: 100%;
+}
+#modalOne .modal-content{
+    width: 600px;
+}
+#modalTwo .modal-content{
+    width: 800px;
+    max-width: 100%;
+}
+.popup-title {
+    background: linear-gradient(120deg, rgba(15, 55, 91, 1) 0%, rgba(30, 186, 13, 1) 100%);
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-title .close {
+    font-size: 20px;
+    text-shadow: none !important;
+    opacity: 1;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.popup-title h2 i {
+    margin-right: 10px;
+}
+
+.popup-title h2 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Proxima Nova Rg';
+}
+
+.popup-detail {
+    padding: 10px;
+}
+
+.popup-detail li {
+    display: inline-block;
+    background: #fff;
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.popup-detail .search-button {
+    font-size: 14px;
+    color: #fff;
+    width: 210px;
+    max-width: 100%;
+    padding: 6px 0;
+    border-radius: 18px;
+}
+
+.popup-detail ul {
+    margin-bottom: 20px;
+}
+
+.popup-detail input {
+    border-radius: 18px !important;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    margin-right: 20px;
+}
+
+.popup-detail li a {
+    color: #36627E;
+    font-family: 'Proxima Nova Rg';
+    font-size: 14px;
+}
+
+/*.dashboard.active {
+    
+}*/
+.header.active,.main.active{
+    filter: blur(5px);
+}
+/*----------popup css end----------*/
+
+.datepicker-dropdown {
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px 0px !important;
+    padding: 10px;
+}
+
+.datepicker table tr td,
+.datepicker table tr th {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-family: 'Proxima Nova Rg';
+}
+
+.datepicker-dropdown.datepicker-orient-left:before,
+.datepicker-dropdown.datepicker-orient-left:after {
+    display: none;
+}
+
+.datepicker .datepicker-switch:hover,
+.datepicker .prev:hover,
+.datepicker .next:hover,
+.datepicker tfoot tr th:hover {
+    background-color: transparent;
+}
+
+.datepicker table tr .dow {
+    font-weight: 800;
+    color: #A3A6B4;
+    font-size: 15px;
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused,
+.datepicker table tr td.active.active,
+.datepicker table tr td.selected,
+.datepicker table tr td.active.active:hover {
+    background: rgba(59, 134, 255, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+    color: #3B86FF;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.datepicker table tr td.range {
+    background: rgba(59, 134, 255, 0.2);
+    cursor: pointer;
+    color: #3B86FF;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.datepicker table tr td.range-end {
+    border-radius: 0 17px 17px 0 !important;
+}
+
+.datepicker table tr td.range-start {
+    border-radius: 17px 0 0 17px !important;
+}
+
+.datepicker table tr td.range:hover {
+    border-radius: 0;
+}
+
+.active.selected.range-start.range-end.day {
+    border-radius: 50% !important;
+}
+
+.datepicker table tr td.range:last-child {
+    border-radius: 0 17px 17px 0;
+}
+
+.datepicker table tr td.range:first-child {
+    border-radius: 17px 0 0 17px;
+}
+
+/*----------Date picker css end----------*/
+
+/*----------Media css start----------*/
+
+@media (max-width: 1080px) and (min-width: 992px) {
+    .site-chart .chart-detail .chart-box {
+        padding: 20px 40px 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .site-chart .chart-detail .chart-box {
+        padding: 20px 40px 100px;
+        display: block;
+    }
+    .data-picker {
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+    .navbar-toggler {
+        padding: 0;
+        border: transparent;
+    }
+    .navbar-collapse {
+        transition: all 0.5s ease 0s;
+        position: absolute;
+        top: 100%;
+        background: rgb(245, 245, 245);
+        width: 100%;
+        z-index: 9999;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+    }
+    .navbar-nav {
+        padding: 30px;
+    }
+    .nav-link {
+        color: #43425D !important;
+    }
+    .site-account {
+        padding: 0 30px 30px;
+    }
+    .site-account ul {
+        padding-left: 0;
+    }
+    .site-account ul li a {
+        color: #43425D;
+    }
+    .desk-resp {
+        display: none;
+    }
+    .serch-pannel {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header .close {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .display-pannel {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .display-pannel .dropdown {
+        margin-bottom: 25px;
+    }
+    .site-chart .chart-detail .chart-box {
+        padding: 20px 20px 100px;
+    }
+    .save-pannel {
+        display: block;
+    }
+    .search-box-popup {
+        margin-top: 10px;
+        display: block;
+    }
+    .search-box-popup .search-button {
+        margin: 15px 0;
+    }
+    .display-pannel li:not(:last-child) {
+        margin-right: 0;
+    }
+    .data-picker {
+        display: block;
+    }
+    .site-chart .chart-detail .chart-box input {
+        margin-left: 0 !important;
+        margin-bottom: 15px;
+    }
+    .site-chart .chart-detail .chart-box h5 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-chart .chart-detail ul {
+        display: block !important;
+    }
+    .display-pannel .dropdown {
+        max-width: 100%;
+        width: 100%;
+    }
+    .display-pannel .btn {
+        width: 100%;
+    }
+    .serch-pannel .form-wrap .label {
+        transform: inherit;
+        top: 13px;
+    }
+    .search-list li {
+        display: block;
+    }
+    .search-box {
+        margin-top: 10px;
+    }
+    .pagination-inner {
+        display: block;
+    }
+    .pagination-inner li {
+        margin: 0 2px;
+    }
+    .popup-detail .form-wrap {
+        display: block !important;
+    }
+    .popup-detail input {
+        line-height: 36px !important;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .popup-detail .search-button {
+        display: block;
+        width: 100%;
+    }
+    .date-box{
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    .save-pannel {
+        display: block;
+    }
+    .save-pannel .search-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

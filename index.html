@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick</title>    
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#ffcc48">		
+	<!-- ======================CSS============================ -->
+	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+		
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css"> -->
+	<link href="css/chosen.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<!-- ======================JS============================ -->
+	<script src="js/jquery.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+<body class="dashboard">
+
+<header class="header">
+		<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="index.html">								
+				<svg xmlns="http://www.w3.org/2000/svg" width="168" height="51.96" viewBox="0 0 168 51.96"><defs><style>.a{fill:#fff;}.b{fill:#1eba0d;}</style></defs><g transform="translate(63.12 9.291)"><path class="a" d="M139.24,44.387H132.17l-1.363,4.6H125L132.726,25.3h5.858l7.726,23.683h-5.656Zm-5.757-4.242h4.494l-2.222-7.372h-.1Z" transform="translate(-125 -21.816)"/><path class="a" d="M168.7,40.2a11.3,11.3,0,0,1,1.818-6.665,5.894,5.894,0,0,1,5.05-2.525,4.674,4.674,0,0,1,2.222.555,5.325,5.325,0,0,1,1.767,1.616V25.3h5.5V48.983h-4.8l-.353-2.171a6.574,6.574,0,0,1-1.868,1.868,4.876,4.876,0,0,1-2.474.656,5.935,5.935,0,0,1-5.05-2.424,10.325,10.325,0,0,1-1.767-6.362V40.2Zm5.5.353a7.557,7.557,0,0,0,.606,3.333,2.17,2.17,0,0,0,2.121,1.212,3.689,3.689,0,0,0,1.515-.3,2.172,2.172,0,0,0,1.06-.959v-7.12a3.535,3.535,0,0,0-1.06-1.06,2.925,2.925,0,0,0-1.515-.353,2.236,2.236,0,0,0-2.121,1.363,7.98,7.98,0,0,0-.656,3.585v.3Z" transform="translate(-146.633 -21.816)"/><path class="a" d="M231.629,25.3v4.393h2.777V33.48h-2.777v9.8a2.09,2.09,0,0,0,.4,1.363,1.41,1.41,0,0,0,1.01.4,2.278,2.278,0,0,0,.656-.05,1.977,1.977,0,0,0,.656-.151l.353,4.09a10.023,10.023,0,0,1-1.515.3,13.581,13.581,0,0,1-1.565.1,5.588,5.588,0,0,1-4.141-1.464c-.959-.959-1.414-2.474-1.414-4.6v-9.8H223.6V29.693h2.474V25.3Z" transform="translate(-173.811 -21.816)"/><path class="b" d="M270.143,18.4V37.235a7.825,7.825,0,0,1-2.727,6.362,10.636,10.636,0,0,1-7.069,2.323,10.514,10.514,0,0,1-7.12-2.323,7.825,7.825,0,0,1-2.727-6.362V21.884H256V37.235a4.526,4.526,0,0,0,1.161,3.333,4.289,4.289,0,0,0,3.181,1.111,4.244,4.244,0,0,0,3.131-1.111,4.509,4.509,0,0,0,1.111-3.333V18.4Z" transform="translate(-187.128 -18.4)"/><path class="b" d="M302.1,40.853v8.13h-5.5V25.3h9.039a9.771,9.771,0,0,1,6.716,2.171,7.07,7.07,0,0,1,2.474,5.656,7.14,7.14,0,0,1-2.474,5.656,10.008,10.008,0,0,1-6.716,2.121H302.1Zm0-4.242h3.535a3.543,3.543,0,0,0,2.727-1.01,3.64,3.64,0,0,0,.959-2.525,3.466,3.466,0,0,0-.959-2.575,3.543,3.543,0,0,0-2.727-1.01H302.1Z" transform="translate(-209.949 -21.816)"/></g><g transform="translate(105.335 12.775)"><rect class="a" width="5.504" height="4.393"/><rect class="a" width="5.504" height="15.502" transform="translate(0 8.18)"/></g><path class="b" d="M278.257,8.4,272.5,14.106h11.513Z" transform="translate(-134.899 -4.158)"/><g transform="translate(0 0)"><g transform="translate(41.798 36.294)"><path class="a" d="M96.018,87.541a2.589,2.589,0,0,1-1.717-.707L83.495,75.978a2.392,2.392,0,0,1,3.383-3.383L97.734,83.451a2.348,2.348,0,0,1,0,3.383A2.215,2.215,0,0,1,96.018,87.541Z" transform="translate(-82.775 -71.875)"/></g><g transform="translate(0 3.838)"><path class="b" d="M3.383,43,0,39.614l20.5-20.5L31.964,30.525,54.889,7.6l3.383,3.434L31.964,37.342,20.5,25.93Z" transform="translate(0 -7.6)"/></g><g transform="translate(5.504)"><path class="b" d="M16.808,30.045A19.154,19.154,0,0,1,15.7,23.683a18.837,18.837,0,0,1,36.61-6.261l3.686-3.686a23.94,23.94,0,0,0-4.7-6.766A23.371,23.371,0,0,0,34.583,0,23.736,23.736,0,0,0,17.818,6.918a23.546,23.546,0,0,0-4.646,26.763Z" transform="translate(-10.9 0)"/><path class="a" d="M58.219,41.592c0,.151.05.353.05.5A18.853,18.853,0,0,1,26.1,55.428a19.2,19.2,0,0,1-2.07-2.474L20.6,56.387a23.962,23.962,0,0,0,2.121,2.474,23.607,23.607,0,0,0,40.3-16.714,25.45,25.45,0,0,0-.5-4.848Z" transform="translate(-15.702 -18.465)"/></g><path class="b" d="M109.73,5.6H101.6l8.13,8.13Z" transform="translate(-50.296 -2.772)"/></g></svg>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="javascript:void()">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void();">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void();">Reports</a>
+					</li>									
+				</ul>
+				<div class="site-account">
+					<ul>
+						<li><a href="javascript:void();">James Mitchell</a></li>
+						<li><a href="javascript:void();" class="act-btn">Log Off <i class="fas fa-sign-out-alt"></i></a></li>
+					</ul>
+					<div class="">
+						<img src="image/user.png" alt="">
+					</div>
+				</div>
+			</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<section class="main">
+	<div class="container">
+		<div class="serch-pannel">
+			<ul>
+				<li>
+					<div class="form-wrap">
+						<label class="label">Platform</label>
+						<div class="input-tab">
+						<!-- <input type="text" placeholder="Type here a platform name or select from the saved clicking &#xf150;"> -->							
+							<select data-placeholder="Type here a platform name or select from the saved clicking &#xf150;" multiple class="chosen-select" name="test">
+						    <option value=""></option>
+						    <option>American Black Bear</option>
+						    <option>Asiatic Black Bear</option>
+						    <option>Brown Bear</option>
+						    <option>Giant Panda</option>
+						    <option>Sloth Bear</option>
+						    <option>Sun Bear</option>
+						    <option>Polar Bear</option>
+						    <option>Spectacled Bear</option> 
+							</select>
+						<div class="btn-group">
+							<button type="button" class="filter-btn btn-bg">
+								<i class="fas fa-filter"></i>
+							</button>
+							<button type="button" class="search-btn btn-bg">
+								<i class="fas fa-caret-square-down"></i>
+							</button>
+						</div>							
+						</div>	
+					</div>
+				</li>
+				<li>
+					<div class="form-wrap">
+						<label class="label">Display</label>
+						<ul class="display-pannel">
+							<li>
+							<div class="dropdown dd-1">
+                			<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>                
+			                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                  <a class="dropdown-item" href="#">Action</a>
+			                  <a class="dropdown-item" href="#">Another action</a>
+			                  <a class="dropdown-item" href="#">Something else here</a>
+			                </div>
+          				</div>
+          			</li>
+          			<li>
+	              		<div class="dropdown dd-2">
+		                	<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Desktop</button>	                
+			                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                  <a class="dropdown-item" href="#">Action</a>
+			                  <a class="dropdown-item" href="#">Another action</a>
+			                  <a class="dropdown-item" href="#">Something else here</a>
+			                </div>
+	              		</div>
+	              	</li>
+	              	<li>
+          				<div class="dropdown dd-3">
+            				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gaming</button>
+            				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              					<a class="dropdown-item" href="#">Action</a>
+              					<a class="dropdown-item" href="#">Another action</a>
+              					<a class="dropdown-item" href="#">Something else here</a>
+            				</div>
+          				</div>
+          			</li>
+          			<li>
+          				<div class="dropdown dd-4">
+            				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+			                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                  <a class="dropdown-item" href="#">Action</a>
+			                  <a class="dropdown-item" href="#">Another action</a>
+			                  <a class="dropdown-item" href="#">Something else here</a>
+			                </div>
+          				</div>
+          			</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="save-pannel">	
+						<div class="">											
+              			<button type="button" class="search-button">
+							<i class="fas fa-search"></i>
+						</button>
+						<a href="#" class="">Clear all</a>
+						</div>
+						<div class="search-box-popup">
+							<div>
+                      			<input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+    							<label for="styled-checkbox-1" data-modal="modalOne" class="checked">Save this search</label>	    				
+          					</div>
+          					<button type="button" class="search-button" data-modal="modalTwo">
+								Run Search
+							</button>
+							<div class="dropdown">
+									<button class="btn btn-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-download"></i> Export as
+									</button>
+							 	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    	<a class="dropdown-item" href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+							    	<a class="dropdown-item" href="#"><i class="fas fa-file-image"></i> JPEG</a>
+							    	<a class="dropdown-item" href="#"><i class="fas fa-file-image"></i> PNG</a>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>		
+	</div>
+		<div class="site-chart">
+		<div class="container">
+			<div class="chart-inner">
+				<h2>Cost per 1,000</h2>
+				<img class="" src="image/chart.png" alt="">
+			</div>
+			<div class="chart-detail">
+				<div class="chart-box">
+					<ul class="d-flex justify-content-between">
+						<li class="box-link active">
+							<a href="#">1 Day</a>
+						</li>
+						<li class="box-link">
+							<a href="#">1 Week</a>
+						</li>
+						<li class="box-link">
+							<a href="#">1 Month</a>
+						</li>
+						<li class="box-link">
+							<a href="#">1 Year</a>
+						</li>												
+					</ul>
+					<div class="data-picker input-daterange"> 
+						<h5>Custom</h5>
+						<div class="date-box">
+							<input type="text" class="input-sm form-control" name="from" placeholder="&#xf073; From:"/>		
+							<input type="text" class="input-sm form-control" name="to" placeholder="&#xf073; To:"/>	
+						</div>
+						<button type="button" class="search-button" data-modal="modalTwo">
+								Filter
+						</button>
+    				</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="modalTwo" class="modal">
+	<div class="modal-content">
+		<div class="search-toggle">
+			<div class="search-title">
+      			<h2>Search</h2>	
+      			<div class="close-btn">	
+					<span class="close"><i class="fas fa-times"></i></span>
+				</div>
+      		</div>
+			<div class="search-list">
+		<ul>
+			<li>
+				<div class="search-text">
+					<h5>My Favorite Search</h5>
+					<p>Adobe, Bright Roll, Choozle | Placement: All, Device: Desktop, Inventory: Gaming, Website: All</p>
+				</div>
+				<div class="search-box">
+					<button type="button" class="btn add-btn"><i class="fas fa-search-plus"></i>search</button>
+					<button type="button" class="btn del-btn"><i class="far fa-trash-alt"></i></button>
+				</div>
+			</li>
+			<li>
+				<div class="search-text">
+					<h5>My Favorite Search</h5>
+					<p>Adobe, Bright Roll, Choozle | Placement: All, Device: Desktop, Inventory: Gaming, Website: All</p>
+				</div>
+				<div class="search-box">
+					<button type="button" class="btn add-btn"><i class="fas fa-search-plus"></i>search</button>
+					<button type="button" class="btn del-btn"><i class="far fa-trash-alt"></i></button>
+				</div>
+			</li>
+			<li>
+				<div class="search-text">
+					<h5>My Favorite Search</h5>
+					<p>Adobe, Bright Roll, Choozle | Placement: All, Device: Desktop, Inventory: Gaming, Website: All</p>
+				</div>
+				<div class="search-box">
+					<button type="button" class="btn add-btn"><i class="fas fa-search-plus"></i>search</button>
+					<button type="button" class="btn del-btn"><i class="far fa-trash-alt"></i></button>
+				</div>
+			</li>
+			<li>
+				<div class="search-text">
+					<h5>My Favorite Search</h5>
+					<p>Adobe, Bright Roll, Choozle | Placement: All, Device: Desktop, Inventory: Gaming, Website: All</p>
+				</div>
+				<div class="search-box">
+					<button type="button" class="btn add-btn"><i class="fas fa-search-plus"></i>search</button>
+					<button type="button" class="btn del-btn"><i class="far fa-trash-alt"></i></button>
+				</div>
+			</li>
+			<li>
+				<div class="search-text">
+					<h5>My Favorite Search</h5>
+					<p>Adobe, Bright Roll, Choozle | Placement: All, Device: Desktop, Inventory: Gaming, Website: All</p>
+				</div>
+				<div class="search-box">
+					<button type="button" class="btn add-btn"><i class="fas fa-search-plus"></i>search</button>
+					<button type="button" class="btn del-btn"><i class="far fa-trash-alt"></i></button>
+				</div>
+			</li>
+		</ul>
+			</div>
+			<div class="pagination-inner">
+				<ul class="pagination">
+						<li class="page-item"><a class="page-link" href="#">
+							<i class="fas fa-chevron-left"></i></a>
+						</li>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+				</ul>
+				<p>Displaying 5 of 80 results</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modalOne" class="modal">
+  <div class="modal-content">    
+    	<div class="popup-title">
+      		<h2><i class="fas fa-save"></i>Save this search</h2>	
+      		<span class="close"><i class="fas fa-times"></i></span>    
+      	</div>
+      	<div class="popup-detail">
+      		<ul>
+      			<li><a href="">Adobe</a></li>
+      			<li><a href="">Bright Roll</a></li>
+      			<li><a href="">Choozle</a></li>
+      		</ul>
+	      	<div class="form-wrap d-flex">
+	      		<input type="text" placeholder="Give this search a name">
+	      		<button type="button" class="search-button">
+					Save and Search
+				</button>
+	      	</div>
+    	</div>
+  </div>
+</div>
+<script src="js/chosen.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+<script src="js/custom.js" ></script>
+
+</body>
+</html>
+
